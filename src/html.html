@@ -11,39 +11,37 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<div class="mgi_header">
-    <div class="mgi_container">
-        <div class="mgi_header-nav">
-            <div class="mgi_header-logo">
-                <img src="http://zozothemes.com/html/epoint/demo/images/logo-light.png" alt="" class="mgi_header-logo-img">
-                <img src="http://zozothemes.com/html/epoint/demo/images/logo.png" alt="" class="mgi_header-logo-img-scroll">
-            </div>
-            <div class="mgi_header-menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Header</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Porfolio</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Elements</a></li>
-                </ul>
-                <ul>
-                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
-                    <li><i class="fa-solid fa-bag-shopping"></i></li>
-                    <li><i class="fa-solid fa-bars"></i></li>
-                </ul>
-            </div>
+<div class="mgi_header mgi_text-center desktop:mgi_block laptop:mgi_block tablet:mgi_hidden">
+    <div class="mgi_container mgi_inline-flex mgi_space-x-4 mgi_m-auto mgi_place-content-between">
+        <div class="mgi_flex-1 desktop:mgi_m-3 tablet:mgi_m-2">
+            <img src="http://zozothemes.com/html/epoint/demo/images/logo-light.png" alt="" class="mgi_header-logo-img disabled:mgi_opacity-100">
+            <img src="http://zozothemes.com/html/epoint/demo/images/logo.png" alt="" class="mgi_header-logo-img-scroll">
+        </div>
+        <div class="mgi_flex-1 mgi_inline-flex mgi_text-white">
+            <ul class="mgi_inline-flex">
+                <li class="desktop:mgi_m-3 tablet:mgi_m-2"><a href="#">Home</a></li>
+                <li class="desktop:mgi_m-3 tablet:mgi_m-2"><a href="#">Header</a></li>
+                <li class="desktop:mgi_m-3 tablet:mgi_m-2"><a href="#">Pages</a></li>
+                <li class="desktop:mgi_m-3 tablet:mgi_m-2"><a href="#">Features</a></li>
+                <li class="desktop:mgi_m-3 tablet:mgi_m-2"><a href="#">Porfolio</a></li>
+                <li class="desktop:mgi_m-3 tablet:mgi_m-2"><a href="#">Blog</a></li>
+                <li class="desktop:mgi_m-3 tablet:mgi_m-2"><a href="#">Shop</a></li>
+                <li class="desktop:mgi_m-3 tablet:mgi_m-2"><a href="#">Elements</a></li>
+            </ul>
+            <ul class="mgi_inline-flex">
+                <li class="desktop:mgi_m-3 tablet:mgi_m-2"><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li class="desktop:mgi_m-3 tablet:mgi_m-2"><i class="fa-solid fa-bag-shopping"></i></li>
+                <li class="desktop:mgi_m-3 tablet:mgi_m-2"><i class="fa-solid fa-bars"></i></li>
+            </ul>
         </div>
     </div>
 </div>
-<div class="mgi_header-mobile">
-    <div class="mgi_header-mb-icon">
-        <i class="fa-solid fa-bars" onclick="displayMenu();"></i>
-        <img src="http://zozothemes.com/html/epoint/demo/images/logo-light.png" alt="" class="mgi_header-mb-logo-img">
-        <img src="http://zozothemes.com/html/epoint/demo/images/logo.png" alt="" class="mgi_header-mb-logo-img-scroll">
-        <div class="mgi_header-mb-menu">
+<div class="mgi_header-mobile desktop:mgi_hidden laptop:mgi_hidden tablet:mgi_flex mgi_justify-between mgi_flex-row mgi_bg-black mgi_items-center">
+    <div class="mgi_header-mb-icon mgi_flex mgi_text-white">
+        <a href="javascript:void(0);" onclick="displayMenu();"><i class="fa-solid fa-bars mgi_p-3"></i></a>
+        <img src="http://zozothemes.com/html/epoint/demo/images/logo-light.png" alt="" class="mgi_header-mb-logo-img mgi_p-3">
+        <img src="http://zozothemes.com/html/epoint/demo/images/logo.png" alt="" class="mgi_header-mb-logo-img-scroll mgi_hidden mgi_p-3">
+        <div class="mgi_header-mb-menu mgi_hidden mgi_bg-black-cus">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Header</a></li>
@@ -56,35 +54,35 @@
             </ul>
         </div>
     </div>
-    <div class="mgi_header-mb-icon mgi_header-mb-icon-extra-nav">
-        <ul>
-            <li><i class="fa-solid fa-magnifying-glass"></i></li>
-            <li><i class="fa-solid fa-bag-shopping"></i></li>
-            <li><i class="fa-solid fa-bars"></i></li>
+    <div class="mgi_header-mb-icon mgi_header-mb-icon-extra-nav mgi_text-white">
+        <ul class="mgi_flex mgi_items-center">
+            <li class="mgi_p-2"><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li class="mgi_p-2"><i class="fa-solid fa-bag-shopping"></i></li>
+            <li class="mgi_p-2"><i class="fa-solid fa-bars mgi_icon-custom"></i></li>
         </ul>
     </div>
 </div>
-<div class="mgi_slide" id="slide">
+<div class="mgi_slide mgi_text-white" id="slide">
     <div class="mgi_slide_item" id="mgi_slide_item_0">
         <h2>We are Powerful</h2>
-        <p>
+        <p class="mgi_text-base">
             We believe in Simple, Creative & Flexible Design Standards. Unlimited features, elements and fast and friendly support gives ultimate website to boom your business.
         </p>
-        <button class="mgi_btn">LEARN MORE</button>
+        <button class="mgi_border-blue mgi_bg-blue mgi_text-white mgi_btn hover:mgi_bg-opacity-70">LEARN MORE</button>
     </div>
     <div class="mgi_slide_item" id="mgi_slide_item_1">
         <h2>We are Simple</h2>
         <p>
             We believe in Simple, Creative & Flexible Design Standards. Unlimited features, elements and fast and friendly support gives ultimate website to boom your business.
         </p>
-        <button class="mgi_btn">LEARN MORE</button>
+        <button class="mgi_border-blue mgi_bg-blue mgi_text-white mgi_btn hover:mgi_bg-opacity-70">LEARN MORE</button>
     </div>
     <div class="mgi_slide_item" id="mgi_slide_item_2">
         <h2>We Are Creative</h2>
         <p>
             We believe in Simple, Creative & Flexible Design Standards. Unlimited features, elements and fast and friendly support gives ultimate website to boom your business.
         </p>
-        <button class="mgi_btn">LEARN MORE</button>
+        <button class="mgi_border-blue mgi_bg-blue mgi_text-white mgi_btn hover:mgi_bg-opacity-70">LEARN MORE</button>
     </div>
     <div class="mgi_slide_button md:mgi_transition-transform">
         <a href="javascript:void(0);" onclick="chooseSlide($(this),0);" class="mgi_slide_dot"><i class="fa-solid fa-circle-dot"></i></a>
@@ -92,22 +90,22 @@
         <a href="javascript:void(0);" onclick="chooseSlide($(this),2);"><i class="fa-solid fa-circle-dot"></i></a>
     </div>
 </div>
-<div class="mgi_container">
-    <div class="mgi_about mgi_padding-80">
+<div class="mgi_container mgi_text-center mgi_m-auto mgi_py-20">
+    <div class="mgi_about">
         <div class="mgi_about-item">
-            <h5 style="width: 50%;">
+            <h5 class="desktop:mgi_w-1/2 laptop:mgi_w-full tablet:mgi_w-full mgi_text-left">
             We have more than 10 years experience in web design and development.
             </h5>
         </div>
-        <div class="mgi_about-item mgi_about-item-img">
-            <div class="mgi_about-item-sub">
+        <div class="mgi_about-item mgi_about-item-img desktop:mgi_inline-flex laptop:mgi_inline-flex">
+            <div class="mgi_about-item-sub mgi_text-justify desktop:mgi_w-1/2 laptop:mgi_w-full">
                 <img src="http://zozothemes.com/html/epoint/demo/images/content/others/2.jpg" alt="">
                 <p>Et culpa dolore odio voluptate suscipit corporis sed ad sunt autem! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
-            <div class="mgi_about-item-sub mgi_about-item-sub-padding">
+            <div class="mgi_about-item-sub mgi_flex-col desktop:mgi_w-1/2 laptop:mgi_w-full desktop:mgi_pl-8 laptop:mgi_pl-8 mgi_text-justify">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et culpa dolore odio voluptate suscipit corporis sed ad sunt autem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et culpa dolore odio voluptate suscipit corporis sed ad sunt autem!</p>
                 <p>Et culpa dolore odio voluptate suscipit corporis sed ad sunt autem! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <div class="mgi_logo">
+                <div class="mgi_logo mgi_flex mgi_justify-evenly">
                     <h6><i class="fa-solid fa-chart-area"></i> Analysis</h6>
                     <h6><i class="fa-solid fa-compass-drafting"></i> Design</h6>
                     <h6><i class="fa-solid fa-rocket"></i> Launch</h6>
@@ -116,15 +114,15 @@
         </div>
     </div>
 </div>
-<div class="mgi_service-total">
-    <div class="mgi_container">
-        <div class="mgi_services mgi_padding-80">
+<div class="mgi_service-total mgi_bg-white mgi_py-20">
+    <div class="mgi_container mgi_m-auto">
+        <div class="mgi_services">
             <div class="mgi_services-item">
                 <p class="mgi_services-item-title">
                     We Build Awesome and Beautiful Premium HTML, Wordpress, Magento, Joomla, E-commerce Themes and Email Templates.
                 </p>
             </div>
-            <div class="mgi_services-item mgi_services-item-logo">
+            <div class="mgi_services-item mgi_services-item-logo mgi_grid desktop:mgi_grid-cols-3 laptop:mgi_grid-cols-2 tablet:mgi_grid-cols-1 tablet:mgi_text-center mobile:mgi_text-center">
                 <div class="mgi_services-item-sub">
                     <div class="mgi_icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
                     <div class="mgi_title">
@@ -183,16 +181,16 @@
         </div>
     </div>
 </div>
-<div class="mgi_container">
-    <div class="mgi_projects mgi_padding-80">
-        <div class="mgi_projects-item mgi_decoration">
+<div class="mgi_container mgi_m-auto mgi_py-20">
+    <div class="mgi_projects">
+        <div class="mgi_projects-item mgi_decoration mgi_text-center">
             <h3>Our Latest Projects</h3>
-            <p style="color: #434955;">
+            <p class="mgi_text-blacklist">
                 We Build Awesome and Beautiful Premium HTML, Wordpress, Magento, Joomla, E-commerce Themes and Email Templates.
             </p>
         </div>
-        <div class="mgi_projects-item mgi_projects-item-product">
-            <div class="mgi_projects-item-sub">
+        <div class="mgi_projects-item mgi_projects-item-product mgi_grid desktop:mgi_grid-cols-4 laptop:mgi_grid-cols-2 tablet:mgi_grid-1 tablet:mgi_text-center tablet:mgi_justify-center">
+            <div class="mgi_projects-item-sub mgi_p-4">
                 <div class="mgi_projects-item-img">
                     <a href="#"><img src="http://zozothemes.com/html/epoint/demo/images/content/portfolio/set3/2.jpg" alt=""></a>
                 </div>
@@ -201,7 +199,7 @@
                     <p>Web Design</p>
                 </div>
             </div>
-            <div class="mgi_projects-item-sub">
+            <div class="mgi_projects-item-sub mgi_p-4">
                 <div class="mgi_projects-item-img">
                     <a href="#"><img src="http://zozothemes.com/html/epoint/demo/images/content/portfolio/set3/2.jpg" alt=""></a>
                 </div>
@@ -210,7 +208,7 @@
                     <p>Web Design</p>
                 </div>
             </div>
-            <div class="mgi_projects-item-sub">
+            <div class="mgi_projects-item-sub mgi_p-4">
                 <div class="mgi_projects-item-img">
                     <a href="#"><img src="http://zozothemes.com/html/epoint/demo/images/content/portfolio/set3/2.jpg" alt=""></a>
                 </div>
@@ -219,7 +217,7 @@
                     <p>Web Design</p>
                 </div>
             </div>
-            <div class="mgi_projects-item-sub">
+            <div class="mgi_projects-item-sub mgi_p-4">
                 <div class="mgi_projects-item-img">
                     <a href="#"><img src="http://zozothemes.com/html/epoint/demo/images/content/portfolio/set3/2.jpg" alt=""></a>
                 </div>
@@ -231,24 +229,24 @@
         </div>
     </div>
 </div>
-<div class="mgi_contact-total">
-    <div class="mgi_container">
-        <div class="mgi_contact">
-            <div class="mgi_contact-sub">
+<div class="mgi_contact-total mgi_bg-blue mgi_p-10">
+    <div class="mgi_container mgi_m-auto">
+        <div class="mgi_contact mgi_grid tablet:mgi_grid-cols-1 mobile:mgi_grid-cols-1">
+            <div class="mgi_contact-sub mgi_text-white">
                 <h6 class="mgi_no-margin">We ensure quality & support. People love us & we love them. We provide services more than 100000 Customers worldwide. <strong>Do you need any Help?</strong></h6>
             </div>
-            <div class="mgi_contact-sub">
+            <div class="mgi_contact-sub desktop:mgi_text-right laptop:mgi_text-right laptop:mgi_float-right">
                 <p><button>Contact Now <i class="fa-solid fa-right-long"></i></button></p>
             </div>
         </div>
     </div>
 </div>
-<div class="mgi_container">
-    <div class="mgi_projects mgi_padding-80 mgi_quote">
-        <div class="mgi_projects-item mgi_quote-item mgi_decoration">
+<div class="mgi_container mgi_m-auto mgi_py-20">
+    <div class="mgi_projects mgi_quote">
+        <div class="mgi_projects-item mgi_quote-item mgi_decoration mgi_text-center">
             <h3>What Clients Says?</h3>
         </div>
-        <div class="mgi_projects-item mgi_projects-item-product mgi_quote-item">
+        <div class="mgi_projects-item mgi_projects-item-product mgi_quote-item mgi_grid desktop:mgi_grid-cols-4 laptop:mgi_grid-cols-2 tablet:mgi_grid-cols-1">
             <div class="mgi_projects-item-sub mgi_quote-item-sub">
                 <div class="mgi_quote-item-sub-description">
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
@@ -286,65 +284,73 @@
                 </div>
             </div>
         </div>
-        <div class="mgi_project-item mgi_quote-item-img">
-            <img src="http://zozothemes.com/html/epoint/demo/images/content/client/5.png" alt="">
-            <img src="http://zozothemes.com/html/epoint/demo/images/content/client/5.png" alt="">
-            <img src="http://zozothemes.com/html/epoint/demo/images/content/client/5.png" alt="">
-            <img src="http://zozothemes.com/html/epoint/demo/images/content/client/5.png" alt="">
-            <img src="http://zozothemes.com/html/epoint/demo/images/content/client/5.png" alt="">
-            <img src="http://zozothemes.com/html/epoint/demo/images/content/client/5.png" alt="">
-            <img src="http://zozothemes.com/html/epoint/demo/images/content/client/5.png" alt="">
+        <div class="mgi_project-item mgi_grid mgi_grid-cols-12 mgi_overflow-hidden">
+            <div class="mgi_col-span-12 mgi_w-full">
+                <div class="mgi_quote-item-img mgi_flex mgi_flex-nowrap mgi_max-w-max">
+                    <img class="laptop:mgi_min-w-[200px]" src="http://zozothemes.com/html/epoint/demo/images/content/client/5.png" alt="">
+                    <img class="laptop:mgi_min-w-[200px]" src="http://zozothemes.com/html/epoint/demo/images/content/client/5.png" alt="">
+                    <img class="laptop:mgi_min-w-[200px]" src="http://zozothemes.com/html/epoint/demo/images/content/client/5.png" alt="">
+                    <img class="laptop:mgi_min-w-[200px]" src="http://zozothemes.com/html/epoint/demo/images/content/client/5.png" alt="">
+                    <img class="laptop:mgi_min-w-[200px]" src="http://zozothemes.com/html/epoint/demo/images/content/client/5.png" alt="">
+                    <img class="laptop:mgi_min-w-[200px]" src="http://zozothemes.com/html/epoint/demo/images/content/client/5.png" alt="">
+                    <img class="laptop:mgi_min-w-[200px]" src="http://zozothemes.com/html/epoint/demo/images/content/client/5.png" alt="">
+                </div>
+            </div>
         </div>
     </div>
 </div>
 <div class="mgi_service-total">
-    <div class="mgi_container">
-        <div class="mgi_services mgi_padding-80 news">
-            <div class="mgi_projects-item mgi_decoration">
+    <div class="mgi_container mgi_m-auto mgi_py-20">
+        <div class="mgi_services news">
+            <div class="mgi_projects-item mgi_decoration mgi_text-center">
                 <h3>Latest News</h3>
-                <p style="color: #434955;">
+                <p class="mgi_text-blacklist">
                     We Build Awesome and Beautiful Premium HTML, Wordpress, Magento, Joomla, E-commerce Themes and Email Templates.
                 </p>
             </div>
-            <div class="mgi_news-item">
-                <div class="mgi_news-item-sub">
-                    <div class="mgi_news-item-img">
-                        <a href="#"><img src="http://zozothemes.com/html/epoint/demo/images/content/blog/t2.jpg" alt=""></a>
-                    </div>
-                    <div class="mgi_news-item-title">
-                        <h5><a href="#">How to Slide PSD files?</a></h5>
-                        <p>3rd Aug, 2016</p>
-                    </div>
-                </div>
-                <div class="mgi_news-item-sub">
-                    <div class="mgi_news-item-img">
-                        <a href="#"><img src="http://zozothemes.com/html/epoint/demo/images/content/blog/t2.jpg" alt=""></a>
-                    </div>
-                    <div class="mgi_news-item-title">
-                        <h5><a href="#">How to Slide PSD files?</a></h5>
-                        <p>3rd Aug, 2016</p>
-                    </div>
-                </div>
-                <div class="mgi_news-item-sub">
-                    <div class="mgi_news-item-img">
-                        <a href="#"><img src="http://zozothemes.com/html/epoint/demo/images/content/blog/t2.jpg" alt=""></a>
-                    </div>
-                    <div class="mgi_news-item-title">
-                        <h5><a href="#">How to Slide PSD files?</a></h5>
-                        <p>3rd Aug, 2016</p>
+            <div class="mgi_grid mgi_grid-cols-12 mgi_overflow-hidden">
+                <div class="mgi_col-span-12 mgi_w-full">
+                    <div class="mgi_news-item mgi_flex mgi_flex-nowrap mgi_max-w-max">
+                        <div class="mgi_news-item-sub mgi_py-1 mgi_p-3 laptop:mgi_w-[66.7%] tablet:mgi_w-[100%] mgi_min-w-[320px]">
+                            <div class="mgi_news-item-img">
+                                <a href="#"><img src="http://zozothemes.com/html/epoint/demo/images/content/blog/t2.jpg" alt=""></a>
+                            </div>
+                            <div class="mgi_news-item-title">
+                                <h5><a href="#">How to Slide PSD files 1?</a></h5>
+                                <p>3rd Aug, 2016</p>
+                            </div>
+                        </div>
+                        <div class="mgi_news-item-sub mgi_py-1 mgi_p-3 laptop:mgi_w-[66.7%] tablet:mgi_w-[100%] mgi_min-w-[320px]">
+                            <div class="mgi_news-item-img">
+                                <a href="#"><img src="http://zozothemes.com/html/epoint/demo/images/content/blog/t2.jpg" alt=""></a>
+                            </div>
+                            <div class="mgi_news-item-title">
+                                <h5><a href="#">How to Slide PSD files 2?</a></h5>
+                                <p>3rd Aug, 2016</p>
+                            </div>
+                        </div>
+                        <div class="mgi_news-item-sub mgi_py-1 mgi_p-3 laptop:mgi_w-[66.7%] tablet:mgi_w-[100%] mgi_min-w-[320px]">
+                            <div class="mgi_news-item-img">
+                                <a href="#"><img src="http://zozothemes.com/html/epoint/demo/images/content/blog/t2.jpg" alt=""></a>
+                            </div>
+                            <div class="mgi_news-item-title">
+                                <h5><a href="#">How to Slide PSD files 3?</a></h5>
+                                <p>3rd Aug, 2016</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="mgi_footer-total">
-    <div class="mgi_container">
+<div class="mgi_footer-total mgi_bg-black">
+    <div class="mgi_container mgi_m-auto">
         <div class="mgi_footer">
             <div class="mgi_footer-contact">
-                <button class="mgi_btn">CONTACT NOW <i class="fa-solid fa-envelope"></i></button>
+                <button class="mgi_btn mgi_bg-blue mgi_text-white">CONTACT NOW <i class="fa-solid fa-envelope"></i></button>
             </div>
-            <div class="mgi_footer-body">
+            <div class="mgi_grid mgi_footer-body mgi_grid desktop:mgi_grid-cols-4 laptop:mgi_grid-cols-2 tablet:mgi_grid-cols-1">
                 <div class="mgi_footer-body-item">
                     <img src="http://zozothemes.com/html/epoint/demo/images/logo-light.png" alt="">
                     <p>We believe in Simple, Creative & Flexible Design Standards. Unlimited features, elements and fast and friendly support gives ultimate website to boom your business.</p>
@@ -360,7 +366,7 @@
                 </div>
                 <div class="mgi_footer-body-item">
                     <h5>QUICK LINKS</h5>
-                    <ul class="mgi_quick-links">
+                    <ul class="mgi_grid mgi_quick-links">
                         <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
                         <li><a href="#"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
                         <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
@@ -377,8 +383,8 @@
                     <h5>EMAIL NEWSLETTER</h5>
                     <p>Subscribe to Our Newsletter to get Important News, Amazing Offers & Inside Scoops:</p>
                     <div class="mgi_resgiter">
-                        <input type="text" placeholder="Enter Your Email">
-                        <button class="mgi_btn"><i class="fa-solid fa-share"></i></button>
+                        <input type="text" placeholder="Enter Your Email" class="mgi_border-blue mgi_text-white">
+                        <button class="mgi_border-blue mgi_bg-blue mgi_btn mgi_text-white"><i class="fa-solid fa-share"></i></button>
                     </div>
                 </div>
             </div>
@@ -386,17 +392,17 @@
         </div>
     </div>
     <div class="mgi_footer-bottom-total">
-        <div class="mgi_container">
-            <div class="mgi_footer-bottom">
-                <div class="mgi_copyright">
-                    <ul>
+        <div class="mgi_container mgi_m-auto mgi_py-3">
+            <div class="mgi_grid mgi_footer-bottom desktop:mgi_grid-cols-2 laptop:mgi_grid-cols-2 tablet:mgi_grid-cols-1 mobile:mgi_grid-cols-1">
+                <div class="mgi_copyright desktop:mgi_order-none laptop:mgi_order-none tablet:mgi_order-2 mobile:mgi_order-2">
+                    <ul class="mgi_flex mgi_justify-start">
                         <li><a href="#">© 2016 ePoint. All Rights Reserved.</a></li>
                         <li><a href="#">Terms & Conditions</a></li>
                         <li> | <a href="#">Cookie policy</a></li>
                     </ul>
                 </div>
-                <div class="mgi_social">
-                    <ul>
+                <div class="mgi_social desktop:mgi_order-none laptop:mgi_order-none tablet:mgi_order-1 mobile:mgi_order-1">
+                    <ul class="mgi_flex desktop:mgi_justify-end laptop:mgi_justify-end tablet:mgi_justify-start">
                         <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>

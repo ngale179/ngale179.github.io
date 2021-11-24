@@ -1,23 +1,29 @@
 $(window).scroll(function(){
     var scroll = $(window).scrollTop();
     if (scroll < 100) {
-        $(".mgi_header").removeClass("mgi_header-scroll");
+        $(".mgi_header").removeClass("mgi_bg-white");
+        $(".mgi_header ul").removeClass("mgi_text-black");
         $(".mgi_header-logo-img-scroll").attr('style','display: none;');
         $(".mgi_header-logo-img").attr('style','display: block;');
-
-        $(".mgi_header-mobile").removeClass("mgi_header");
+        $(".mgi_header-mb-icon").removeClass("mgi_text-black");
+        $(".mgi_header-mb-icon").addClass("mgi_text-white");
+        $(".mgi_header-mobile").removeClass("mgi_bg-white");
         $(".mgi_header-mb-logo-img-scroll").attr('style','display: none;');
         $(".mgi_header-mb-logo-img").attr('style','display: block;');
-        $(".mgi_header-mb-icon, .mgi_header-mobile").attr('style','background: #000;');
+        $(".mgi_header-mb-menu-choose").addClass("mgi_bg-black-cus");
+        $(".mgi_header-mb-menu-choose").removeClass("mgi_bg-white-cus");
     } else {
-        $(".mgi_header").addClass("mgi_header-scroll");
+        $(".mgi_header").addClass("mgi_bg-white");
+        $(".mgi_header ul").addClass("mgi_text-black");
         $(".mgi_header-logo-img-scroll").attr('style','display: block;');
         $(".mgi_header-logo-img").attr('style','display: none;');
-
-        $(".mgi_header-mobile").addClass("mgi_header");
-        $(".mgi_header-mb-logo-img").attr('style','display: none;');
+        $(".mgi_header-mb-icon").removeClass("mgi_text-white");
+        $(".mgi_header-mb-icon").addClass("mgi_text-black");
+        $(".mgi_header-mobile").addClass("mgi_bg-white");
+        $(".mgi_header-mb-menu-choose").addClass("mgi_bg-white-cus");
+        $(".mgi_header-mb-menu-choose").removeClass("mgi_bg-black-cus");
         $(".mgi_header-mb-logo-img-scroll").attr('style','display: block;');
-        $(".mgi_header-mb-icon, .mgi_header-mobile").attr('style','background: #fff;');
+        $(".mgi_header-mb-logo-img").attr('style','display: none;');
     }
 });
 
